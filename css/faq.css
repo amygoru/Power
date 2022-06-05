@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  font-family: Lato, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.containerr {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 3px 13px 0 rgb(0 0 0 / 15%);
+    margin: 20px 0;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+/* .question.active + .answercont {
+} */
+
+@media screen and (max-width: 790px){
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+  width: 100%;
+}
+}
+button.cus-app {
+    border: none;
+    font-weight: bold;
+    color: #ea7e1b;
+    
+    background: #ffffff;
+    padding: 15px 22px;
+}
+.Appointment_box h1 {
+    
+    font-weight: bold;
+    color: #ffffff;
+}
+.Appointment_box p {
+    color: #ffffff;
+}
+.Appointment_box {
+    padding: 43px;
+    background: #ea7e1b;
+}
+.question.activee {
+    color: #ea7e1b;
+}
+.faq {
+    padding: 69px 0px;
+}
